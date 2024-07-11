@@ -1,0 +1,11 @@
+@layer prime-overwrite {
+  body .p-toast .p-toast-message .p-toast-message-content {
+    @apply border-0;
+  }
+  body .main_container header .p-menubar.p-component.main_menubar {
+    @apply px-1;
+  }
+  body .p-fieldset .p-fieldset-legend {
+    color: var(--p-content-color); /* --p-surface-400 */
+  }
+}

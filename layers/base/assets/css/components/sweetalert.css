@@ -1,0 +1,40 @@
+:root {
+  --swal-bg: var(--p-surface-50);
+  --swal-confirm-btn-color: var(--p-button-primary-background);
+  --swal-cancel-btn-color: theme('colors.light.400');
+  --swal-deny-btn-color: theme('colors.secondary.400');
+  --swal-text-color: theme('colors.light.800');
+  --swal-icon-success-color: #a5dc86;
+  --swal-icon-warning-color: #f8bb86;
+  --swal-icon-error-color: #f27474;
+  --swal-icon-info-color: #3fc3ee;
+}
+
+html.dark-mode {
+  --swal-bg: var(--p-surface-800);
+  --swal-confirm-btn-color: var(--p-button-primary-background);
+  --swal-cancel-btn-color: theme('colors.light.400');
+  --swal-deny-btn-color: theme('colors.secondary.400');
+  --swal-text-color: theme('colors.light.100');
+  --swal-icon-success-color: #a5dc86;
+  --swal-icon-warning-color: #f8bb86;
+  --swal-icon-error-color: #f27474;
+  --swal-icon-info-color: #9de0f6;
+}
+
+body div:where(.swal2-icon).swal2-success {
+  border-color: var(--swal-icon-success-color);
+  color: var(--swal-icon-success-color);
+}
+body div:where(.swal2-icon).swal2-warning {
+  border-color: var(--swal-icon-warning-color);
+  color: var(--swal-icon-warning-color);
+}
+body div:where(.swal2-icon).swal2-error {
+  border-color: var(--swal-icon-error-color);
+  color: var(--swal-icon-error-color);
+}
+body div:where(.swal2-icon).swal2-info {
+  border-color: var(--swal-icon-info-color);
+  color: var(--swal-icon-info-color);
+}

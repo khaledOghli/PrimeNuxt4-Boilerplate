@@ -1,0 +1,19 @@
+@import 'sweetalert.css';
+.btn-primary {
+  @apply btn btn-primary;
+}
+.btn-secondary {
+  @apply btn btn-secondary;
+}
+/* .btn-success {
+  @apply btn btn-success;
+}
+.btn-danger {
+  @apply btn btn-danger;
+}
+.btn-warning {
+  @apply btn btn-warning;
+} */
+.btn-light {
+  @apply btn btn-light;
+}

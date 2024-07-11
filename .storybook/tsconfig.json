@@ -1,0 +1,9 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "../layers/base/.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "~": ["../base"]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+body,
+html {
+  @apply bg-light-50 text-light-900 dark:text-light-100 h-full dark:bg-slate-800;
+}
+html[lang='ar'] {
+  direction: rtl;
+}
+html[lang='en'] {
+  direction: ltr;
+}
+.main_container {
+  @apply flex h-full flex-col;
+}
+.main_content {
+  flex: 1 0 auto;
+}
+.sticky_footer {
+  @apply flex-shrink-0;
+}
+.prose :where(pre, code):not(:where(.not-prose, .not-prose *)) {
+  @apply bg-dark-600;
+}
+.untouchable {
+  pointer-events: none;
+  user-select: none;
+  touch-action: none;
+}
+
+.lottie_svg path[fill] {
+  fill: currentColor !important;
+}
+.lottie_svg path[stroke] {
+  stroke: currentColor !important;
+}
+.icon-color {
+  color: var(--p-primary-color, currentColor);
+}
+.dm-field label {
+  cursor: pointer;
+}

@@ -1,0 +1,86 @@
+{
+  "comment-todo": {
+    "scope": "javascript,typescript,vue,markdown",
+    "prefix": "ctodo",
+    "body": [
+      "/* TODO: $1 */"
+    ],
+  },
+  "comment-bug": {
+    "scope": "javascript,typescript,vue,markdown",
+    "prefix": "cbug",
+    "body": [
+      "/** BUG: $1 */"
+    ],
+  },
+  "comment-validation": {
+    "scope": "javascript,typescript,vue,markdown",
+    "prefix": "cval",
+    "body": [
+      "/* VALIDATION: $1 */"
+    ],
+  },
+  "comment-note": {
+    "scope": "javascript,typescript,vue,markdown",
+    "prefix": "cnote",
+    "body": [
+      "/* NOTE: $1 */"
+    ],
+  },
+  "comment-warning": {
+    "scope": "javascript,typescript,vue,markdown",
+    "prefix": "cwarn",
+    "body": [
+      "/* WARNING: $1 */"
+    ],
+  },
+  "comment-info": {
+    "scope": "javascript,typescript,vue,markdown",
+    "prefix": "cinfo",
+    "body": [
+      "/* INFO: $1 */"
+    ],
+  },
+  "comment-api": {
+    "scope": "javascript,typescript,vue,markdown",
+    "prefix": "capi",
+    "body": [
+      "/* API: $1 */"
+    ],
+  },
+  "vue-script-setup": {
+    "scope": "vue",
+    "prefix": "vsct",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "const props = defineProps<{",
+      "  modelValue?: boolean,",
+      "}>()",
+      "$1",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>",
+      "    <slot/>",
+      "  </div>",
+      "</template>",
+    ],
+  },
+  "vue-script-setup-props": {
+    "scope": "vue",
+    "prefix": "vsprops",
+    "body": [
+      "const props = defineProps<{",
+      "  modelValue?: boolean,",
+      "}>()"
+    ],
+  },
+  "i18n": {
+    "scope": "javascript,typescript,vue,markdown,html",
+    "prefix": "vti18n",
+    "body": [
+      "$$t('${TM_SELECTED_TEXT}')",
+    ],
+    "description": "Wrap selected text with $t for internationalization"
+  },
+}

@@ -1,0 +1,20 @@
+# #!/usr/bin/env sh
+# . "$(dirname -- "$0")/_/husky.sh"
+
+# commit_msg_pattern="^(feat|fix|docs|style|refactor|test|chore)(\(.+\))?: .{1,50}$"
+
+# validate_commit_msg() {
+#   red='\033[0;31m'
+#   green='\033[0;32m'
+#   blue='\033[0;34m'
+#   no_color='\033[0m'
+#   echo " ${red} - Invalid commit message. Your commit message should follow this pattern: ${green}type(scope): subject"
+#   echo " ${red} - 'type' is one of the following: ${blue} [feat, fix, docs, style, refactor, test, chore]"
+#   echo " ${red} - 'scope' is optional and can be anything specifying the place of the commit change"
+#   echo " ${red} - 'subject' is a brief description of the change, try to keep it under 50 characters${no_color}"
+# }
+
+# if ! npx --no-install commitlint --edit "$1"; then
+#   validate_commit_msg
+#   exit 1  # Exit with a non-zero status code to prevent the commit
+# fi

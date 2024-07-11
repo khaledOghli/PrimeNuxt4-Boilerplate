@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Lint staged files
+# pnpm run lint-staged --concurrent false
+
+# run tests
