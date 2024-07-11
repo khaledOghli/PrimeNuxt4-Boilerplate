@@ -42,7 +42,7 @@ const severity = computed(() => {
       <div class="grid grid-cols-12 w-full gap-4">
         <div class="col-span-6">
           <p class="text-lg">
-            {{ $t('This is a page to test API calls.') }}
+            {{ $t('test-api-page') }}
           </p>
           <VButton
             class="max-w-[200px] w-full"

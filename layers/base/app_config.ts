@@ -1,8 +1,6 @@
 // app_config.ts
-import process from 'node:process';
-
 import type { NuxtAppConfig } from '@nuxt/schema';
-// import type { NuxtConfig } from '@nuxt/types';
+import process from 'node:process';
 
 const baseUrl = process.env.BASE_URL || '/';
 
@@ -24,11 +22,6 @@ const appConfig: NuxtAppConfig = {
       {
         rel: 'apple-touch-icon',
         href: '/apple-touch-icon.png',
-      },
-      {
-        id: 'theme-link',
-        rel: 'stylesheet',
-        href: `${baseUrl}themes/aura-light-blue/theme.css`,
       },
     ],
     meta: [
