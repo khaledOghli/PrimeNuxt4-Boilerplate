@@ -43,6 +43,7 @@ export default defineNuxtConfig({
           'https://primefaces.org',
           'https://primefaces.org/cdn/primevue/images/',
           'http://localhost:3000',
+          'https://primenuxt4.vercel.app/',
         ],
       },
     },
@@ -82,7 +83,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://localhost:3000/', // site url
+    url: 'https://primenuxt4.vercel.app/', // site url
   },
 
   imports: {
