@@ -40,9 +40,8 @@ export default defineNuxtConfig({
       crossOriginEmbedderPolicy: isDevelopment ? 'unsafe-none' : 'require-corp',
       contentSecurityPolicy: {
         'img-src': [
-          'https://primefaces.org',
           'https://primefaces.org/cdn/primevue/images/',
-          'http://localhost:3000',
+          'http://localhost:3000/',
           'https://primenuxt4.vercel.app/',
         ],
       },
