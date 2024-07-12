@@ -9,3 +9,11 @@ NODE_VERSION = "16"
 from = "/*"
 to = "/index.html"
 status = 200
+
+[context.deploy-preview]
+  command = "pnpm install && pnpm nuxt:prepare && pnpm run build"
+  publish = "dist"
+
+[context.branch-deploy]
+  command = "pnpm install && pnpm nuxt:prepare && pnpm run build"
+  publish = "dist"
