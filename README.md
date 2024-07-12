@@ -6,14 +6,23 @@ To get started!
 
 **Client:** Nuxt, Vue, Typescript, UnoCSS, PrimeVue
 
-**Server:** .NET Core, C#, Entity Framework Core
+## Environment
+
+.env
+
+```javascript
+  NUXT_PUBLIC_API_BASE=http://localhost:3000/
+  BASE_URL=/
+```
 
 ## Usage/Examples
 
 ```javascript
   pnpm install
 
-  pnpm run dev
+  pnpm nuxt:prepare
+
+  pnpm dev
 ```
 
 ## Features To Do

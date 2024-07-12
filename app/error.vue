@@ -17,10 +17,8 @@ nuxtApp.hook('app:error:cleared', () => {
 <template>
   <div>
     <AppGlobalComponents />
-
     <div
       class="app h-full"
-      :dir="$i18n.localeProperties.dir"
       :class="`lang-${$i18n.locale}`"
     >
       <NuxtLayout>

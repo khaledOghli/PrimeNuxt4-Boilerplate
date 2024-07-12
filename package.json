@@ -10,6 +10,7 @@
     "install": "node install.mjs",
     "nuxt:prepare": "pnpm run prepare && pnpm -C layers/base run prepare && pnpm -C layers/UI run prepare && pnpm -C layers/UI run postinstall",
     "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
+    "dev:docs": "cd docs && pnpm run dev",
     "prepare": "nuxi prepare && husky",
     "start": "node .output/server/index.mjs",
     "start:generate": "npx serve .output/public",

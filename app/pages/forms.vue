@@ -6,7 +6,7 @@ const i18n = useI18n();
 const swal = useSwal();
 const toaster = useToaster();
 useHead({
-  title: i18n.t('Home'),
+  title: i18n.t('menu.forms'),
 });
 
 const currentComponent: any = shallowRef(LazyInputFields);
@@ -66,7 +66,7 @@ function showToast2() {
 }
 
 onMounted(() => {
-  translate('Home');
+  translate('menu.forms');
 });
 </script>
 

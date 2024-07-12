@@ -1,10 +1,6 @@
-import path from 'node:path';
 import process from 'node:process';
-import { fileURLToPath } from 'node:url';
 import app from './app_config';
 import { pwa } from './config/pwa';
-
-const baseUrl = process.env.BASE_URL;
 
 /* eslint-disable no-magic-numbers */
 const oneYear = 1000 * 60 * 60 * 24 * 365;
@@ -37,31 +33,11 @@ export default defineNuxtConfig({
     'nuxt-security',
     '@nuxtjs/sitemap',
   ],
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  runtimeConfig: {
-    public: {
-      baseUrl,
-    },
-  },
-  alias: {
-    '@base': path.resolve(__dirname),
-    '@app': path.resolve(__dirname, '../../app'),
-    '@ui': path.resolve(__dirname, '../UI'),
-  },
+
   security: {
     headers: {
       crossOriginEmbedderPolicy: isDevelopment ? 'unsafe-none' : 'require-corp',
       contentSecurityPolicy: {
-        // 'script-src': [
-        //   'https://primefaces.org/cdn',
-        //   'https://avatar.iran.liara.run/public',
-        //   'unsafe-inline',
-        // ],
-        // 'script-src-elem': [
-        //   'https://primefaces.org/cdn',
-        //   'https://avatar.iran.liara.run/public',
-        //   'http://localhost:3000',
-        // ],
         'img-src': [
           'https://primefaces.org',
           'https://primefaces.org/cdn/primevue/images/',
@@ -115,16 +91,15 @@ export default defineNuxtConfig({
       'composables/**',
       './stores',
     ],
-
   },
 
-  content: {
-    highlight: {
-      theme: {
-        default: 'github-dark',
-      },
-    },
-  },
+  // content: {
+  //   highlight: {
+  //     theme: {
+  //       default: 'github-dark',
+  //     },
+  //   },
+  // },
 
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
@@ -133,10 +108,6 @@ export default defineNuxtConfig({
     renderJsonPayloads: true,
     typedPages: true,
   },
-
-  css: [
-    // 'primeicons/primeicons.css',
-  ],
 
   colorMode: {
     classSuffix: '-mode',
@@ -167,26 +138,9 @@ export default defineNuxtConfig({
     directives: {
       include: ['Ripple', 'Tooltip'],
     },
+    autoImport: true,
     components: {
       prefix: 'Prime',
-      include: [
-        'Card',
-        'Button',
-        'InputText',
-        'InputNumber',
-        'Select',
-        'Checkbox',
-        'RadioButton',
-        'Menubar',
-        'Textarea',
-        'InlineMessage',
-        'Fieldset',
-        'TabMenu',
-        'Password',
-        'Drawer',
-        'Avatar',
-        'DataTable',
-      ],
     },
     importTheme: { from: '@/primevue.theme.js' },
   },
@@ -273,25 +227,6 @@ export default defineNuxtConfig({
     locales: ['en', 'ar'],
   },
 
-  vite: {
-    build: {
-      target: ['es2015', 'chrome87', 'safari12'],
-    },
-    vue: {
-      script: {
-        globalTypeFiles: [
-          fileURLToPath(new URL('./index.d.ts', import.meta.url)),
-        ],
-      },
-    },
-    resolve: {
-      alias: {
-        '@base': path.resolve(__dirname),
-        '@app': path.resolve(__dirname, '../../app'),
-        '@ui': path.resolve(__dirname, '../UI'),
-      },
-    },
-  },
   app,
   compatibilityDate: '2024-07-08',
 });

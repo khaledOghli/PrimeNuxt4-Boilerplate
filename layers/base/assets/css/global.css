@@ -1,3 +1,11 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: var(--un-default-border-color, #e5e7eb); /* 2 */
+}
 body,
 html {
   @apply bg-light-50 text-light-900 dark:text-light-100 h-full dark:bg-slate-800;
@@ -37,4 +45,17 @@ html[lang='en'] {
 }
 .dm-field label {
   cursor: pointer;
+}
+.gradient-title {
+  background: linear-gradient(
+    90deg,
+    var(--p-primary-400) 25%,
+    var(--p-green-300),
+    var(--p-green-500)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 300%;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
 }

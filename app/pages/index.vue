@@ -5,6 +5,9 @@ const classes = {
   body: 'flex justify-center items-center',
   footer: '',
 };
+definePageMeta({
+  layout: 'default',
+});
 const date = useLocaleDate(new Date());
 const dateOnlyTime = useLocaleOnlyTime(new Date());
 const dateWithTime = useLocaleDateWithTime(new Date());
@@ -61,30 +64,3 @@ const dateWithTime = useLocaleDateWithTime(new Date());
     </template>
   </VCard>
 </template>
-
-<style scoped>
-.gradient-title {
-  background: linear-gradient(
-    90deg,
-    var(--p-primary-400) 25%,
-    var(--p-green-300),
-    var(--p-green-500)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-size: 300%;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 10s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-</style>

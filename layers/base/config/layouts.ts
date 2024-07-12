@@ -1,8 +1,9 @@
 // src/config/sideMenuConfig.ts
 // Define an interface for the side menu configuration
 export interface SideMenuConfig {
-  width: string
+  width: number
   type: 'extended' | 'collapsed'
+  insetInline: number
   backgroundColor: string
   textColor: string
   hoverColor: string
@@ -20,7 +21,8 @@ export interface HeaderMenuConfig {
   responsiveBreakpoint: number
 }
 export const sideMenuConfig: SideMenuConfig = {
-  width: '250px', // Width of the side menu
+  width: 250, // Width of the side menu
+  insetInline: 20, // Inset inline of the side menu
   type: 'extended', // Type of the side menu (extended or collapsed)
   backgroundColor: '#343a40', // Background color of the side menu
   textColor: '#ffffff', // Text color for the menu items

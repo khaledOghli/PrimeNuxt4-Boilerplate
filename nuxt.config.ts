@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import path from 'node:path';
 import process from 'node:process';
 
 const baseUrl = process.env.NUXT_PUBLIC_API_BASE;
@@ -18,6 +19,19 @@ export default defineNuxtConfig({
       apiBase: baseUrl,
     },
   },
-
+  alias: {
+    '@base': path.resolve(__dirname, 'layers/base'),
+    '@ui': path.resolve(__dirname, 'layers/UI'),
+    '@app': path.resolve(__dirname, 'app'),
+  },
+  vite: {
+    resolve: {
+      alias: {
+        '@base': path.resolve(__dirname, 'layers/base'),
+        '@app': path.resolve(__dirname, 'app'),
+        '@ui': path.resolve(__dirname, 'layers/UI'),
+      },
+    },
+  },
   compatibilityDate: '2024-07-08',
 });

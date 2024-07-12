@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   components: [
@@ -9,4 +9,18 @@ export default defineNuxtConfig({
   ],
   modules: ['@nuxtjs/i18n'],
   compatibilityDate: '2024-07-08',
+  // alias: {
+  //   '@ui': path.resolve(__dirname),
+  //   '@app': path.resolve(__dirname, '../../app'),
+  //   '@base': path.resolve(__dirname, '../base'),
+  // },
+  // vite: {
+  //   resolve: {
+  //     alias: {
+  //       '@ui': path.resolve(__dirname),
+  //       '@app': path.resolve(__dirname, '../../app'),
+  //       '@base': path.resolve(__dirname, '../base'),
+  //     },
+  //   },
+  // },
 });

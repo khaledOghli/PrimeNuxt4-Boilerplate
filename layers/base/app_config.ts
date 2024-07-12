@@ -1,6 +1,8 @@
 // app_config.ts
-import type { NuxtAppConfig } from '@nuxt/schema';
 import process from 'node:process';
+
+import type { NuxtAppConfig } from '@nuxt/schema';
+// import type { NuxtConfig } from '@nuxt/types';
 
 const baseUrl = process.env.BASE_URL || '/';
 
