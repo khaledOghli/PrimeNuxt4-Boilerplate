@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TransitionEffect } from '@base/enums/transitionEffect';
+import { TransitionEffect } from '@base/enums/TransitionEffect';
 import { useOnline } from '@vueuse/core';
 
 const online = useOnline();

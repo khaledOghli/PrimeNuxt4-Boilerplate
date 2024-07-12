@@ -1,3 +1,4 @@
+import path from 'node:path';
 import process from 'node:process';
 import app from './app_config';
 import { pwa } from './config/pwa';
@@ -46,6 +47,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   image: {
     provider: 'ipx',
     quality: 80,
@@ -93,13 +95,11 @@ export default defineNuxtConfig({
     ],
   },
 
-  // content: {
-  //   highlight: {
-  //     theme: {
-  //       default: 'github-dark',
-  //     },
-  //   },
-  // },
+  alias: {
+    '@base': path.resolve(__dirname),
+    '@ui': path.resolve(__dirname, '../UI'),
+    '@app': path.resolve(__dirname, '../../app'),
+  },
 
   experimental: {
     // when using generate, payload js assets included in sw precache manifest
