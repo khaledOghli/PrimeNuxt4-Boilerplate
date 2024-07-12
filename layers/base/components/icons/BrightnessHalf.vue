@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import json from '~/assets/json/icons/Theme.json';
+import json from '@base/assets/json/icons/Theme.json';
 
 const lottieRef = ref();
 

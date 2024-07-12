@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import json from '~/assets/json/icons/Globe.json';
+import json from '@base/assets/json/icons/Globe.json';
 
 const lottieRef = ref();
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { TransitionEffect } from '~/enums/transitionEffect';
-import type { TransitionProps } from '~/interfaces/transitions';
+import { TransitionEffect } from '@base/enums/TransitionEffect';
+import type { TransitionProps } from '@base/interfaces/transitions';
 
 const props = withDefaults(defineProps<TransitionProps>(), {
   effect: TransitionEffect.SLIDE_FADE_RIGHT,

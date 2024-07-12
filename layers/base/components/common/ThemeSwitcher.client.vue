@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { playIconAnimation, stopIconAnimation } from '~/utils/iconsAnimation';
+import { playIconAnimation, stopIconAnimation } from '@base/utils/iconsAnimation';
 
 const color = useColorMode();
 const iconRef = ref();

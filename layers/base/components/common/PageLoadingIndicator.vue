@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { nuxtLoadingIndicator } from '~/config/layouts';
+import { nuxtLoadingIndicator } from '@base/config/layouts';
 </script>
 
 <template>
