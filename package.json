@@ -33,6 +33,7 @@
     "@primevue/themes": "4.0.0",
     "@unocss/runtime": "^0.61.3",
     "@vee-validate/zod": "^4.13.2",
+    "@vercel/speed-insights": "^1.0.12",
     "highlight.js": "^11.10.0",
     "lottie-web": "^5.12.2",
     "markdown-it": "^14.1.0",
