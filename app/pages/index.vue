@@ -21,18 +21,14 @@ const dateWithTime = useLocaleDateWithTime(new Date());
         :aria-label="$t('home')"
         class="min-w-fit flex items-center"
       >
-        <NuxtImg
+        <img
           class="h-8 lg:ml-0 sm:ml-3 dark:hidden"
-          src="nuxt/full-logo-green-dark.svg"
-          densities="x1 x2"
-          alt="nuxt-logo"
-        />
-        <NuxtImg
+          src="/nuxt/full-logo-green-dark.svg"
+        >
+        <img
           class="h-8 hidden dark:block"
-          src="nuxt/full-logo-green-light.svg"
-          densities="x1 x2"
-          alt="nuxt-logo"
-        />
+          src="/nuxt/full-logo-green-light.svg"
+        >
       </NuxtLink>
     </template>
     <template #title>

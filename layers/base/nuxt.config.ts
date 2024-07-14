@@ -30,23 +30,23 @@ export default defineNuxtConfig({
     'nuxt-time',
     '@nuxt/scripts',
     '@unlazy/nuxt',
-    // 'nuxt-security',
+    'nuxt-security',
     '@nuxtjs/sitemap',
   ],
 
-  // security: {
-  //   headers: {
-  //     crossOriginEmbedderPolicy: isDevelopment ? 'unsafe-none' : 'require-corp',
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: isDevelopment ? 'unsafe-none' : 'require-corp',
 
-  //     contentSecurityPolicy: {
-  //       'img-src': [
-  //         'https://primefaces.org/cdn/primevue/images/',
-  //         'http://localhost:3000/',
-  //         'https://primenuxt4.vercel.app/',
-  //       ],
-  //     },
-  //   },
-  // },
+      // contentSecurityPolicy: {
+      //   'img-src': [
+      //     'https://primefaces.org/cdn/primevue/images/',
+      //     'http://localhost:3000/',
+      //     'https://primenuxt4.vercel.app/',
+      //   ],
+      // },
+    },
+  },
 
   image: {
     provider: 'ipx',
