@@ -33,6 +33,35 @@
     opacity 0.25s;
 }
 
+.animate-slidedown {
+  animation: slidedown .45s ease-in-out
+}
+
+.animate-slideup {
+  animation: slideup .45s cubic-bezier(0,1,0,1)
+}
+
+@keyframes slidedown {
+  0% {
+      max-height: 0
+  }
+
+  to {
+      max-height: auto
+  }
+}
+
+@keyframes slideup {
+  0% {
+      max-height: 1000px
+  }
+
+  to {
+      max-height: 0
+  }
+}
+
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

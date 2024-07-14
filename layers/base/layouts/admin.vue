@@ -12,7 +12,7 @@ useLocaleHead({
 </script>
 
 <template>
-  <div class="w-full flex bg-slate-100">
+  <div class="w-full flex card-bg">
     <AppSideMenu />
     <div class="the_layout main_container min-h-screen flex-auto">
       <AppHeader />

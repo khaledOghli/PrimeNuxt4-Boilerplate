@@ -5,7 +5,7 @@
 <template>
   <div class="h-screen w-full flex items-center justify-center">
     <div class="lg:w-[400px]">
-      <div class="rounded-xl bg-white shadow-md">
+      <div class="rounded-xl shadow-md">
         <slot />
       </div>
     </div>

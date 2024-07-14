@@ -22,7 +22,7 @@ export interface HeaderMenuConfig {
 }
 export const sideMenuConfig: SideMenuConfig = {
   width: 250, // Width of the side menu
-  insetInline: 20, // Inset inline of the side menu
+  insetInline: 100, // Inset inline of the side menu
   type: 'extended', // Type of the side menu (extended or collapsed)
   backgroundColor: '#343a40', // Background color of the side menu
   textColor: '#ffffff', // Text color for the menu items

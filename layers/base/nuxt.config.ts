@@ -1,7 +1,6 @@
 import path from 'node:path';
 import process from 'node:process';
 import app from './app_config';
-import { pwa } from './config/pwa';
 
 /* eslint-disable no-magic-numbers */
 const oneYear = 1000 * 60 * 60 * 24 * 365;
@@ -17,7 +16,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
-    '@vite-pwa/nuxt',
+    // '@vite-pwa/nuxt',
     '@nuxt/eslint',
     '@primevue/nuxt-module',
     'nuxt-icon',
@@ -31,23 +30,23 @@ export default defineNuxtConfig({
     'nuxt-time',
     '@nuxt/scripts',
     '@unlazy/nuxt',
-    'nuxt-security',
+    // 'nuxt-security',
     '@nuxtjs/sitemap',
   ],
 
-  security: {
-    headers: {
-      crossOriginEmbedderPolicy: isDevelopment ? 'unsafe-none' : 'require-corp',
+  // security: {
+  //   headers: {
+  //     crossOriginEmbedderPolicy: isDevelopment ? 'unsafe-none' : 'require-corp',
 
-      contentSecurityPolicy: {
-        'img-src': [
-          'https://primefaces.org/cdn/primevue/images/',
-          'http://localhost:3000/',
-          'https://primenuxt4.vercel.app/',
-        ],
-      },
-    },
-  },
+  //     contentSecurityPolicy: {
+  //       'img-src': [
+  //         'https://primefaces.org/cdn/primevue/images/',
+  //         'http://localhost:3000/',
+  //         'https://primenuxt4.vercel.app/',
+  //       ],
+  //     },
+  //   },
+  // },
 
   image: {
     provider: 'ipx',
@@ -116,17 +115,17 @@ export default defineNuxtConfig({
     preference: 'light', // default value of $colorMode.preference
     fallback: 'dark', // fallback value if not system preference found
   },
-  nitro: {
-    esbuild: {
-      options: {
-        target: 'esnext',
-      },
-    },
-    prerender: {
-      crawlLinks: false,
-      routes: ['/'],
-    },
-  },
+  // nitro: {
+  //   esbuild: {
+  //     options: {
+  //       target: 'esnext',
+  //     },
+  //   },
+  //   prerender: {
+  //     crawlLinks: false,
+  //     routes: ['/'],
+  //   },
+  // },
   // build: {
   //   transpile: ['primevue','vee-validate', 'primeicons', 'sweetalert2'],
   // },
@@ -195,7 +194,7 @@ export default defineNuxtConfig({
     // },
   },
 
-  pwa,
+  // pwa,
 
   devtools: {
     enabled: true,
