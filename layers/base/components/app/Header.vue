@@ -20,6 +20,6 @@
         </NuxtLink>
       </nav>
     </div>
-    <AppSubHeader />
+    <AppMenu />
   </header>
 </template>
